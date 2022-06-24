@@ -1,0 +1,125 @@
+create database south_valley;
+use south_valley;
+create table faculty(
+id int primary key,
+name varchar (30) not null ,
+levels tinyint ,
+location varchar(50),
+Partition_level varchar(6),
+dean_id int not null unique 
+);
+create table department(
+id int primary key auto_increment,
+name varchar (30) not null ,
+mgr_id int ,
+faculty_id int,
+ foreign key (faculty_id) references faculty(id)
+);
+create table professors(
+id int primary key auto_increment,
+f_name varchar (20) not null ,
+l_name varchar(20) ,
+email varchar (50) unicode not null,
+password varchar(250),
+address varchar (50),
+degree varchar(50),
+dept_id int ,
+  foreign key (dept_id) references department(id)
+);
+create table students(
+id int primary key auto_increment,
+f_name varchar (20) not null ,
+l_name varchar(20) ,
+email varchar (50) unicode not null,
+password varchar(250),
+address varchar (50),
+level varchar(6),
+dept_id int ,
+faculty_id int,
+  foreign key (dept_id) references department(id),
+  foreign key (faculty_id) references faculty(id)
+);
+create table prof_phones(
+prof_id int ,
+phone varchar(13) not null unique,
+ foreign key (prof_id) references professors(id),
+ primary key(prof_id,phone)
+);
+create table courses(
+code  int primary key,
+name varchar (30) not null ,
+description text ,
+level varchar(6),
+start_date timestamp ,
+end_date timestamp ,
+faculty_id int ,
+dept_id int,
+foreign key (dept_id) references department(id),
+  foreign key (faculty_id) references faculty(id)
+);
+
+create table study(
+student_id int ,
+course_id int,
+result float(3),
+foreign key (student_id) references students(id),
+  foreign key (course_id) references courses(code),
+  primary key(student_id,course_id)
+);
+
+create table rates(
+student_id int ,
+course_id int,
+prof_id int,
+course_rate tinyint(1),
+prof_rate tinyint(1),
+comment text,
+foreign key (student_id) references students(id),
+  foreign key (course_id) references courses(code),
+  foreign key (prof_id) references professors(id),
+primary key  (student_id,course_id,prof_id) 
+);
+create table course_prof(
+prof_id int ,
+course_id int,
+question_bank_id int,
+foreign key (prof_id) references professors(id),
+  foreign key (course_id) references courses(code),
+  primary key(prof_id,course_id)
+);
+create table exam(
+id int primary key auto_increment,
+type varchar(20),
+semester varchar(50),
+announce_date timestamp,
+hours_number tinyint(1) ,
+prof_id int ,
+course_id int,
+foreign key (prof_id) references professors(id),
+  foreign key (course_id) references courses(code)
+);
+create table question_banks(
+id int primary key auto_increment,
+prof_id int ,
+course_id int,
+content text not null ,
+subject varchar(20),
+foreign key (prof_id) references professors(id),
+  foreign key (course_id) references courses(code)
+);
+alter table faculty 
+add constraint foreign key (dean_id) references professors(id) ;
+alter table department  
+add constraint foreign key (mgr_id) references professors(id) ;
+
+
+
+create table student_exam(
+student_id int,
+exam_id int ,
+times_to_repeate tinyint(1),
+result float(3),
+foreign key (student_id) references students(id),
+  foreign key (exam_id) references exam(id),
+  primary key (student_id,exam_id)
+);

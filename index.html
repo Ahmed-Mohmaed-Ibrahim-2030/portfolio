@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <main class="">
+        <div class=" container-fluid">
+            <!-- <div class="col-lg-3"></div> -->
+            <aside id="sidebar" class="   position-fixed d-none d-lg-block " style="background-color:RGB(4,11,20);width:310px;height:100vh;z-index:1">
+                <div class="text-center pt-3">
+                    <img src="./assets/images/menu.jpg" class="img-thumbnail rounded-circle bg-dark border-3 border-dark" style="max-width: 50%;" alt="">
+                    <p class="h4 text-center text-light my-2">
+                        Ahmed Mohamed
+                    </p>
+                </div>
+                <div>
+                    <div class="text-center my-4">
+                        <a class="p-2 rounded-circle bg-dark" href=""><i class="fa-brands fa-twitter text-light"></i></a>
+                        <a class="p-2 rounded-circle bg-dark" href=""><i class="fa-brands fa-facebook text-light"></i></a>
+                        <a class="p-2 rounded-circle bg-dark" href=""><i class="fa-brands fa-instagram text-light"></i></a>
+                        <a class="p-2 rounded-circle bg-dark" href=""><i class="fa-brands fa-snapchat-square text-light"></i></a>
+                        <a class="p-2 rounded-circle bg-dark" href=""><i class="fa-brands fa-linkedin text-light"></i></a>
+                        <!-- <a href=""><i class="fa-brands fa-pinterest-p text-light"></i></a> -->
+                    </div>
+                </div>
+                <ul class="mb-5 pb-5 pt-1" style="list-style:none">
+                    <li class="mt-3">
+                        <a onclick="menuClick(event)" href="#sec-home" class="text-decoration-none text-light ">
+                            <i class="text-secondary fa-solid fa-house-chimney "></i> &nbsp; Home
+                        </a>
+
+                    </li>
+                    <li class="mt-3">
+                        <a onclick="menuClick(event)" href="#sec-about" class="text-decoration-none text-light">
+                            <i class="text-secondary fa-solid fa-user"></i> &nbsp; About
+                        </a>
+
+                    </li>
+                    <li class="mt-3">
+                        <a onclick="menuClick(event)" href="#sec-resume" class="text-decoration-none text-light ">
+                            <i class="text-secondary fa-solid fa-file"></i> &nbsp; Resume
+                        </a>
+
+                    </li>
+                    <li class="mt-3">
+                        <a onclick="menuClick(event)" href="#sec-portfolio" class="text-decoration-none text-light">
+                            <i class="text-secondary fa-solid fa-toilets-portable"></i> &nbsp; Protfolio
+                        </a>
+
+                    </li>
+                    <li class="mt-3">
+                        <a onclick="menuClick(event)" href="#sec-services" class="text-decoration-none text-light ">
+                            <i class="text-secondary fa-solid fa-server"></i> &nbsp; Services
+                        </a>
+
+                    </li>
+                    <li class="mt-3">
+                        <a onclick="menuClick(event)" href="#sec-contact" class="text-decoration-none text-light">
+                            <i class="text-secondary fa-solid fa-envelope"></i> &nbsp; Contact
+                        </a>
+
+                    </li>
+                </ul>
+                <nav class="position-fixed d-none d-lg-block bottom-0  ps-lg-4">
+                    <p class="text-light px-5 py-2 mt-5   text-center ">
+                        &copy; Copyright myProtfolio
+                        <br> Designed by <a href="http://">ami2022</a>
+                    </p>
+                </nav>
+            </aside>
+            <section id="sec-home" class="">
+
+                <div class="">
+
+                    <div class="row p-2 d-lg-none" style="justify-content:flex-end">
+                        <div class="col-11"></div>
+                        <div class="col-1">
+                            <button id="menu-btn" onclick="showSidebar(event)" class="  position-fixed bg-info px-2 py-1 rounded-circle border-info  " style="z-index: 1;">
+                <i id="menu" class="fa-solid fa-bars text-light"></i>
+            </button>
+                        </div>
+                    </div>
+
+                    <div class="align-self-center  text-center   text-light" style="padding-top:30% ">
+                        <div class="h1 ">
+                            Ahmed Mohamed
+                        </div>
+                        <div class="h3 ">
+                            I'm
+                            <span id="typed" class="typed" data-typed-items="Designer ,Developer,Freelancer">
+
+                    </span>
+                            <!-- <span href="" class="typed-cursor " aria-hidden="true"> -->
+                            <!-- | -->
+                            <!-- </span> -->
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <div class="row">
+                <div class="col-lg-3">
+
+                </div>
+                <div class="col-lg-9   ms-auto " style="flex-grow: 1;">
+
+                    <section id="sec-about" class="container-fluid container py-5 ">
+                        <div class="h1 " style="color: RGB(23,59,108);width:fit-content">
+                            About
+                            <div class="bg-info w-50" style="height: 5px;">
+
+                            </div>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto excepturi facilis at totam ut consequatur quas quaerat sed perspiciatis esse, officia veniam dolorum ipsam qui. Architecto excepturi facilis at totam ut consequatur quas quaerat sed perspiciatis
+                            esse, officia veniam dolorum ipsam qui.
+                        </p>
+                        <div class="row align-items-lg-start">
+                            <img src="./assets/images/menu.jpg" class="   col-lg-4 " alt="">
+                            <article class="col-lg-8">
+                                <h1 class="my-3" style="color: RGB(23,59,108) ;">
+                                    Web Designer & Web Developer.
+                                </h1>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo cupiditate, incidunt aliquam odio iure dolor? Veniam quae animi, laboriosam provident ex necessitatibus eum tempore rem error nobis saepe, qui pariatur!
+                                </p>
+                                <ul class="row row-cols-lg-2" style="list-style-type: none">
+                                    <li class=" col-lg">
+                                        <span class="text-info fs-2">></span> <strong> Birthday: </strong> 1 May 1995
+                                    </li>
+                                    <li class=" col-lg">
+                                        <span class="text-info fs-2">></span> <strong> Website: </strong>www.ami2022.com
+                                    </li>
+                                    <li class=" col-lg">
+                                        <span class="text-info fs-2">></span> <strong> Phone: </strong> +201148077556
+                                    </li>
+                                    <li class=" col-lg">
+                                        <span class="text-info fs-2">></span> <strong> City: </strong> Minia, Egypt
+                                    </li>
+                                    <li class=" col-lg">
+                                        <span class="text-info fs-2">></span> <strong> Age: </strong> 23
+                                    </li>
+                                    <li class=" col-lg">
+                                        <span class="text-info fs-2">></span> <strong> Degree: </strong> Bachelor's
+                                    </li>
+                                    <li class=" col-lg">
+                                        <span class="text-info fs-2">></span> <strong> PhEmailone: </strong> ahmedmoibrahim22@gmail.com
+                                    </li>
+                                    <li class=" col-lg">
+                                        <span class="text-info fs-2">></span> <strong> Freelance: </strong> Available
+                                    </li>
+                                </ul>
+                                <p>
+                                    Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia
+                                    repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.</p>
+                            </article>
+                        </div>
+                    </section>
+                    <section id="sec-facts" class=" container-fluid container">
+                        <div class="h1 " style="color: RGB(23,59,108);width:fit-content">
+                            Facts
+                            <div class="bg-info w-50" style="height: 5px;">
+
+                            </div>
+                        </div>
+                        <p class="mb-5">
+                            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+                        </p>
+                        <ul class="row " style="list-style: none;">
+                            <li class="col-lg  row mb-4">
+                                <div class="h1 col-lg-4 col-1"> <i class="fa-solid fa-face-smile text-info"></i> </div>
+
+                                <div class="col-8">
+                                    <div class="h1">
+                                        232
+                                    </div>
+                                    <p>
+                                        <strong>Happy Clients</strong> consequuntur quae
+                                    </p>
+                                </div>
+
+                            </li>
+                            <li class="col-lg row mb-4">
+                                <div class="h1 col-lg-4 col-1"> <i class="fa-solid fa-face-smile text-info"></i> </div>
+
+                                <div class="col-8">
+                                    <div class="h1">
+                                        232
+                                    </div>
+                                    <p>
+                                        <strong>Happy Clients</strong> consequuntur quae
+                                    </p>
+                                </div>
+
+                            </li>
+                            <li class="col-lg row mb-4">
+                                <div class="h1 col-lg-4 col-1"> <i class="fa-solid fa-face-smile text-info"></i> </div>
+
+                                <div class="col-8">
+                                    <div class="h1">
+                                        232
+                                    </div>
+                                    <p>
+                                        <strong>Happy Clients</strong> consequuntur quae
+                                    </p>
+                                </div>
+
+                            </li>
+                            <li class="col-lg row mb-4">
+                                <div class="h1 col-lg-4 col-1"> <i class="fa-solid fa-face-smile text-info"></i> </div>
+
+                                <div class="col-8">
+                                    <div class="h1">
+                                        232
+                                    </div>
+                                    <p>
+                                        <strong>Happy Clients</strong> consequuntur quae
+                                    </p>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </section>
+                    <section id="sec-skills" class="py-5 bg-light">
+                        <div class="container-fluid  container ">
+                            <div class="h1 " style="color: RGB(23,59,108);width:fit-content">
+                                Skills
+                                <div class="bg-info w-50" style="height: 5px;">
+
+                                </div>
+                            </div>
+                            <p class="mb-5">
+                                Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+                            </p>
+                            <ul class="row  row-cols-lg-2 g-5 justify-content-between" style="list-style-type: none; ">
+                                <div class="col-lg ">
+                                    <li class="col-lg mb-4" style="margin-left:-30px ; ">
+                                        <div class="row">
+                                            <span class="col-lg-9 col-10">HTML</span>
+                                            <span class="col-2 ps-5 ">100%</span>
+                                        </div>
+                                        <div class="progress" style="height: 10px !important;border-radius: 0;">
+                                            <div class="w-100  bg-info" style="height:10px;"></div>
+                                        </div>
+                                    </li>
+                                    <li class="col-lg mb-4" style="margin-left:-30px ; ">
+                                        <div class="row">
+                                            <span class="col-lg-9 col-10">CSS</span>
+                                            <span class="col-2 ps-5 ">90%</span>
+                                        </div>
+                                        <div class="progress" style="height: 10px !important;border-radius: 0;">
+                                            <div class=" bg-info" style="width:90%;height:10px;"></div>
+                                        </div>
+                                    </li>
+                                    <li class="col-lg mb-4" style="margin-left:-30px ; ">
+                                        <div class="row">
+                                            <span class="col-lg-9 col-10">JavaScript</span>
+                                            <span class="col-2 ps-5 ">75%</span>
+                                        </div>
+                                        <div class="progress" style="height: 10px !important;border-radius: 0;">
+                                            <div class="w-75  bg-info" style="height:10px;"></div>
+                                        </div>
+                                    </li>
+                                </div>
+                                <!-- <div class="col-lg-2"></div> -->
+                                <div class="col-lg ">
+                                    <li class="col-lg mb-4" style="margin-left:-30px ; ">
+                                        <div class="row">
+                                            <span class="col-lg-9  col-10">PHP</span>
+                                            <span class="col-2 ps-5 ">75%</span>
+                                        </div>
+                                        <div class="progress" style="height: 10px !important;border-radius: 0;">
+                                            <div class="w-75  bg-info" style="height:10px;"></div>
+                                        </div>
+                                    </li>
+                                    <li class="col-lg mb-4" style="margin-left:-30px ; ">
+                                        <div class="row">
+                                            <span class="col-lg-9 col-10">Bootstrap</span>
+                                            <span class="col-2 ps-5 ">75%</span>
+                                        </div>
+                                        <div class="progress" style="height: 10px !important;border-radius: 0;">
+                                            <div class="w-75  bg-info" style="height:10px;"></div>
+                                        </div>
+                                    </li>
+                                    <li class="col-lg mb-4" style="margin-left:-30px ; ">
+                                        <div class="row">
+                                            <span class="col-lg-9 col-10">MySQL</span>
+                                            <span class="col-2 ps-5 ">75%</span>
+                                        </div>
+                                        <div class="progress" style="height: 10px !important;border-radius: 0;">
+                                            <div class="w-75  bg-info" style="height:10px;"></div>
+                                        </div>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="sec-resume" class="container-fluid container mt-5">
+                        <div class="h1 " style="color: RGB(23,59,108);width:fit-content">
+                            Resume
+                            <div class="bg-info w-50" style="height: 5px;">
+
+                            </div>
+                        </div>
+                        <p class="mb-5">
+                            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+                        </p>
+                        <div class="row row-cols-lg-2">
+                            <div class="col-lg">
+                                <article>
+                                    <div class="h3">
+                                        Sumary
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-1 row flex-column align-items-center">
+                                            <div class="rounded-circle border border-2 p-1 border-info  " style="width:15px;height:15px;border-color:RGB(31,82,151) !important">
+
+                                            </div>
+                                            <div class=" p-0" style="width:2px !important;height:90%; background-color:RGB(31,82,151)">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-11">
+                                            <div class="h5">
+                                                Ahmed Mohamed Ibrahim
+                                            </div>
+                                            <p>
+                                                Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.
+                                            </p>
+                                            <ul>
+                                                <li>Portland par 127,Orlando, FL</li>
+                                                <li>
+                                                    (123) 456-7891
+                                                </li>
+                                                <li>
+                                                    alice.barkley@example.com
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </article>
+
+                                <article>
+                                    <div class="h3">
+                                        Education
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-1 row flex-column align-items-center">
+                                            <div class="rounded-circle border border-2 p-1 border-info  " style="width:15px;height:15px;border-color:RGB(31,82,151) !important">
+
+                                            </div>
+                                            <div class=" p-0" style="width:2px !important;flex-grow:1; background-color:RGB(31,82,151)">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-11">
+                                            <div class="h5">
+                                                BACHELOR OF Computer and Information
+                                            </div>
+                                            <div class=" py-1 px-3 " style="width:fit-content ;background-color:RGB(228,237,249)">
+                                                2017-2021
+                                            </div>
+                                            <p class="mb-2">
+                                                Computer Science Department, Minia University
+                                            </p>
+                                            <p>
+                                                Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-1 row flex-column justify-content-start align-items-center">
+                                            <div class="rounded-circle border border-2 p-1 border-info  " style="width:15px;height:15px;border-color:RGB(31,82,151) !important">
+
+                                            </div>
+                                            <div class=" p-0" style="width:2px !important;flex-grow:1; background-color:RGB(31,82,151)">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-11">
+                                            <div class="h5">
+                                                Self Leaning
+                                            </div>
+                                            <div class=" py-1 px-3 " style="width:fit-content ;background-color:RGB(228,237,249)">
+                                                Forever
+                                            </div>
+                                            <p>
+                                                Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                </article>
+                            </div>
+                            <article class="col-lg">
+                                <div class="h3">
+                                    Professional Experience
+                                </div>
+                                <div class="row">
+                                    <div class="col-1 row flex-column align-items-center">
+                                        <div class="rounded-circle border border-2 p-1 border-info  " style="width:15px;height:15px;border-color:RGB(31,82,151) !important">
+
+                                        </div>
+                                        <div class=" p-0" style="width:2px !important;flex-grow:1; background-color:RGB(31,82,151)">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-11">
+                                        <div class="h5">
+                                            Full Stack Web development Using PHP
+                                        </div>
+                                        <div class=" py-1 px-3 " style="width:fit-content ;background-color:RGB(228,237,249)">
+                                            April,2022-present
+                                        </div>
+                                        <p>
+                                            ITI Sohag branch , Online Course
+                                        </p>
+                                        <ul>
+                                            <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
+                                            <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
+                                            <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
+                                            <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1 row flex-column align-items-center">
+                                        <div class="rounded-circle border border-2 p-1 border-info  " style="width:15px;height:15px;border-color:RGB(31,82,151) !important">
+
+                                        </div>
+                                        <div class=" p-0" style="width:2px !important;height:90%; background-color:RGB(31,82,151)">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-11">
+                                        <div class="h5">
+                                            Web Design
+                                        </div>
+                                        <div class=" py-1 px-3 " style="width:fit-content ;background-color:RGB(228,237,249)">
+                                            January, 2022
+                                        </div>
+                                        <p class="mb-2">
+                                            NTI, Online Course
+                                        </p>
+                                        <ul>
+                                            <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
+                                            <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
+                                            <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
+                                            <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+
+
+                            </article>
+                        </div>
+                    </section>
+                    <section id="sec-portfolio" class="py-5" style="background-color: RGB(245,248,253);">
+                        <div class="container-fluid container">
+                            <div class="h1 " style="color: RGB(23,59,108);width:fit-content">
+                                Portfolio
+                                <div class="bg-info w-50" style="height: 5px;">
+
+                                </div>
+                            </div>
+                            <p class="mb-4 mt-3">
+                                Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+                            </p>
+                            <div class="rounded-pill text-center px-3 py-2 w-50 mx-auto mb-5" style="background-color:#FFF;">
+                                <a href="" onclick="printApp(event)" class="me-2 text-dark text-decoration-none " style="font-weight:500 ;" data-type="all">All</a>
+                                <a href="" onclick="printApp(event)" class="me-2 text-dark text-decoration-none " style="font-weight:500 ;" data-type="app">APP</a>
+                                <a href="" onclick="printApp(event)" class="me-2 text-dark text-decoration-none " style="font-weight:500 ;" data-type="card">CARD</a>
+                                <a href="" onclick="printApp(event)" class="me-2 text-dark text-decoration-none " style="font-weight:500 ;" data-type="web">WEB</a>
+                            </div>
+                            <div id="apps" class="row row-cols-md-2 row-cols-lg-3">
+
+                            </div>
+                        </div>
+
+                    </section>
+                    <section id="sec-services" class="py-5" style="background-color: RGB(245,248,253);">
+                        <div class="container-fluid container">
+                            <div class="h1 " style="color: RGB(23,59,108);width:fit-content">
+                                Services
+                                <div class="bg-info w-50" style="height: 5px;">
+
+                                </div>
+                            </div>
+                            <p class="mb-4 mt-3">
+                                Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+                            </p>
+                            <div class="row row-cols-md-2 row-cols-lg-3 ">
+                                <article class="row col-md mb-4">
+                                    <div class="col-2 col-md-2 ">
+                                        <a href=" " class="rounded-circle bg-info d-inline-block p-2 fs-3 fw-bold text-light"> <i class="fa-solid fa-briefcase"></i></a>
+                                    </div>
+                                    <div class="col-10 col-md-10">
+                                        <div class="h4 mb-3">
+                                            Lorem ipsum
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur otam laboriosam aperiam neque ad unde et!
+                                        </p>
+                                    </div>
+                                </article>
+
+                                <article class="row col-md">
+                                    <div class="col-2 col-md-2 ">
+                                        <a href=" " class="rounded-circle bg-info d-inline-block p-2 fs-3 fw-bold text-light"> <i class="fa-solid fa-briefcase"></i></a>
+                                    </div>
+                                    <div class="col-10 col-md-10">
+                                        <div class="h4 mb-3">
+                                            Lorem ipsum
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur otam laboriosam aperiam neque ad unde et!
+                                        </p>
+                                    </div>
+                                </article>
+
+                                <article class="row col-md mb-4">
+                                    <div class="col-2 col-md-2 ">
+                                        <a href=" " class="rounded-circle bg-info d-inline-block p-2 fs-3 fw-bold text-light"> <i class="fa-solid fa-briefcase"></i></a>
+                                    </div>
+                                    <div class="col-10 col-md-10">
+                                        <div class="h4 mb-3">
+                                            Lorem ipsum
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur otam laboriosam aperiam neque ad unde et!
+                                        </p>
+                                    </div>
+                                </article>
+
+                                <article class="row col-md">
+                                    <div class="col-2 col-md-2 ">
+                                        <a href=" " class="rounded-circle bg-info d-inline-block p-2 fs-3 fw-bold text-light"> <i class="fa-solid fa-briefcase"></i></a>
+                                    </div>
+                                    <div class="col-10 col-md-10">
+                                        <div class="h4 mb-3">
+                                            Lorem ipsum
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur otam laboriosam aperiam neque ad unde et!
+                                        </p>
+                                    </div>
+                                </article>
+
+                                <article class="row col-md mb-4">
+                                    <div class="col-2 col-md-2 ">
+                                        <a href=" " class="rounded-circle bg-info d-inline-block p-2 fs-3 fw-bold text-light"> <i class="fa-solid fa-briefcase"></i></a>
+                                    </div>
+                                    <div class="col-10 col-md-10">
+                                        <div class="h4 mb-3">
+                                            Lorem ipsum
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur otam laboriosam aperiam neque ad unde et!
+                                        </p>
+                                    </div>
+                                </article>
+
+                                <article class="row col-md">
+                                    <div class="col-2 col-md-2 ">
+                                        <a href=" " class="rounded-circle bg-info d-inline-block p-2 fs-3 fw-bold text-light"> <i class="fa-solid fa-briefcase"></i></a>
+                                    </div>
+                                    <div class="col-10 col-md-10">
+                                        <div class="h4 mb-3">
+                                            Lorem ipsum
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur otam laboriosam aperiam neque ad unde et!
+                                        </p>
+                                    </div>
+                                </article>
+
+
+
+                            </div>
+                        </div>
+                    </section>
+                    <section id="sec-contact" class="py-5" style="background-color: RGB(245,248,253);">
+                        <div class="container-fluid container">
+                            <div class="h1 " style="color: RGB(23,59,108);width:fit-content">
+                                Contact
+                                <div class="bg-info w-50" style="height: 5px;">
+
+                                </div>
+                            </div>
+                            <p class="mb-4 mt-3">
+                                Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+                            </p>
+
+                            <div class="row justify-content-between align-items-lg-start ">
+                                <div class="row col-lg-4 g-5 shadow p-4 mx-auto" style="background-color: #FFF;">
+                                    <div style="">
+                                        <article class="row mt-lg-1 col-md">
+                                            <div class="col-2 col-lg-3 col-md-1 ">
+                                                <a href=" " class="rounded-circle  d-inline-block p-2 fs-3 fw-bold border border-1  "> <i class="fa-solid fa-location-dot"></i></a>
+                                            </div>
+                                            <div class="col-10 col-lg-9 col-md-11">
+                                                <div class="h4 mb-3">
+                                                    Location:
+                                                </div>
+                                                <p>
+                                                    Minia. Egypt
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="row mt-lg-1 col-md">
+                                            <div class="col-2 col-lg-3 col-md-1 ">
+                                                <a href=" " class="rounded-circle border border-1  d-inline-block p-2 fs-3 fw-bold"> <i class="fa-solid fa-envelope" style="   left: 7px;"></i></a>
+                                            </div>
+                                            <div class="col-10 col-lg-9 col-md-11">
+                                                <div class="h4 mb-3">
+                                                    Email:
+                                                </div>
+                                                <p>
+                                                    ahmed2@gmail.com
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="row mt-lg-1 col-md">
+                                            <div class="col-2 col-lg-3 col-md-1 ">
+                                                <a href=" " class="rounded-circle d-inline-block p-2 fs-3 fw-bold border border-1 "> <i class="fa-solid fa-mobile-button"></i></a>
+                                            </div>
+                                            <div class="col-10 col-lg-9 col-md-11">
+                                                <div class="h4 mb-3">
+                                                    Call:
+                                                </div>
+                                                <p>
+                                                    +201148077556
+                                                </p>
+                                            </div>
+                                        </article>
+
+                                    </div>
+
+                                    <iframe class="w-100 " src="https://www.google.com/maps/d/viewer?ie=UTF8&t=k&oe=UTF8&msa=0&mid=1hnzneEJj-J3uNDegU7xLbA1Mazc&ll=0%2C0&z=6" frameborder="0"></iframe>
+
+
+
+
+                                </div>
+                                <div class=" shadow col-lg-7 my-5 p-4 mx-auto" style="background-color: #FFF;">
+                                    <form action="">
+                                        <div class="row ">
+                                            <div class="my-2 col-md-6">
+                                                <label for="">Your Name</label>
+
+                                                <input type="text" class="w-100 p-2 mt-1" name="" id="">
+                                            </div>
+                                            <div class="my-2 col-md-6">
+                                                <label for="">Your Email</label>
+                                                <input type="text" class="w-100 p-2 mt-1" name="" id="">
+                                            </div>
+                                            <div class="my-2">
+                                                <label for="">Subject</label>
+                                                <input type="text" class="w-100 p-2 mt-1" name="" id="">
+                                            </div>
+                                            <div class="my-2">
+                                                <label for="">Subject</label>
+                                                <textarea class="w-100 mt-1" name="" id="" cols="30" rows="10"></textarea>
+                                            </div>
+                                            <button class="btn btn-info  mx-auto text-light " style="width: fit-content;"> Send Message</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                    <nav class="d-lg-none" style="background-color: RGB(4,11,20);">
+                        <p class="text-light py-2 mt-5   text-center ">
+                            &copy; Copyright myProtfolio
+                            <br> Designed by <a href="http://">ami2022</a>
+                        </p>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="./assets/js/typed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+
+</html>

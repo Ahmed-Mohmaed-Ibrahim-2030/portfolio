@@ -1,0 +1,77 @@
+#sec-home {
+    height: 100vh;
+    background-image: url("../images//main.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+#sec-facts .grdbk {
+    background: linear-gradient(#149ddd, #ffffff) !important;
+    border-bottom: 2px solid transparent;
+}
+
+.bg-info {
+    background-color: #149ddd !important;
+}
+
+* {
+    box-sizing: border-box !important;
+}
+
+#apps a:hover {
+    background-color: RGB(72, 178, 225) !important;
+}
+
+#sidebar a:hover:not(ul a) {
+    background-color: RGB(20, 157, 221) !important;
+}
+
+#sidebar ul a:hover i {
+    color: #149ddd !important;
+}
+
+#sidebar ul a:active i {
+    color: #149ddd !important;
+}
+
+#sec-services a,
+#sec-contact a {
+    background-color: RGB(223, 243, 252);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#sec-services a:hover,
+#sec-contact a:hover {
+    background-color: RGB(70, 178, 229) !important;
+}
+
+#sec-services a:hover i,
+#sec-contact a:hover i {
+    color: #fff !important;
+}
+
+#sec-services a i,
+#sec-contact a i {
+    color: RGB(70, 178, 229) !important;
+    border-color: RGB(70, 178, 229) !important;
+    position: absolute;
+    bottom: 5px;
+    left: 9px;
+}
+
+#sec-services a i {
+    left: 7px;
+    bottom: 6px;
+}
+
+#sec-services a {
+    background-color: RGB(223, 243, 252) !important;
+    border: 1px solid RGB(70, 178, 229);
+}
